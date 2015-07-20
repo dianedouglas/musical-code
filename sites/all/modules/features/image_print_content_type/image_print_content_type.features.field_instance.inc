@@ -55,6 +55,46 @@ function image_print_content_type_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-image_print-field_image_project_keywords'
+  $field_instances['node-image_print-field_image_project_keywords'] = array(
+    'bundle' => 'image_print',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_image_project_keywords',
+    'label' => 'Image Project Keywords',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'taxonomy',
+      'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
+      ),
+      'type' => 'taxonomy_autocomplete',
+      'weight' => -2,
+    ),
+  );
+
   // Exported field_instance: 'node-image_print-field_print_image_file'
   $field_instances['node-image_print-field_print_image_file'] = array(
     'bundle' => 'image_print',
@@ -108,6 +148,7 @@ function image_print_content_type_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Description');
+  t('Image Project Keywords');
   t('Information about the image. How was it made? What does it mean? Why did you make it? What is it for? Or leave it blank if there is a description in the image set and this is one part of a large set of images.');
   t('Print Image File');
   t('The image to display, by itself or part of a set.');
